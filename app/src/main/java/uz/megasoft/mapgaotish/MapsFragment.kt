@@ -49,6 +49,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         // Destination of route
         val dest = "41.773937866145864,60.68937252242257"
 
+
         val directionsCall = RetrofitClient.retrofitClient().getDirections(origin, dest,
             "Driving", "AIzaSyCX0AyplniB2J8KldlwqZkj-WQ1I49k3_I")
         directionsCall.enqueue(object : Callback<Directions> {
